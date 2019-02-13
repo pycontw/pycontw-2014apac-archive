@@ -1,0 +1,15 @@
+version: '3'
+services:
+    pycontw-2014-archive:
+        build: ./nginx
+        container_name: pycontw-2014-archive
+        hostname: pycontw-2014-archive
+        volumes:
+            - ./src:/var/www
+        ports:
+            - 8014:80
+
+networks:
+    default:
+        external:
+            name: pycontw-net
