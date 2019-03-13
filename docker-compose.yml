@@ -5,7 +5,7 @@ services:
         container_name: pycontw-2014-archive
         hostname: pycontw-2014-archive
         volumes:
-            - ./src:/var/www
+            - ./src:/usr/share/nginx/html
         ports:
             - 8014:80
 
