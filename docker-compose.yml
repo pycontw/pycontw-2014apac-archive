@@ -1,11 +1,11 @@
 version: '3'
 services:
     pycontw-2014-archive:
-        build: ./nginx
+        build: .
         container_name: pycontw-2014-archive
         hostname: pycontw-2014-archive
         volumes:
-            - ./src:/usr/share/nginx/html
+          - ./src/static:/usr/share/nginx/html/static
         ports:
             - 8014:80
 
