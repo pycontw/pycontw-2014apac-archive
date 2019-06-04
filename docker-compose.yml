@@ -2,6 +2,7 @@ version: '3'
 services:
     pycontw-2014apac:
         build: .
+        restart: always
         container_name: pycontw-2014apac
         hostname: pycontw-2014apac
         volumes:
